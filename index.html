@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Guilherme Sanchez - Consultório Odontológico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/Untitled.png" alt="GS Logo" class="logo-img">
+            <div class="logo-text">
+                <div class="logo-name-group">
+                    <span class="logo-dr">Dr.</span>
+                    <span class="logo-name-line">
+                        <span class="logo-first">Guilherme</span>
+                        <span class="logo-last">Sanchez</span>
+                    </span>
+                </div>
+                <div class="logo-divider"></div>
+                <span class="logo-subtitle">Clínica de Odontologia</span>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-checkbox">
+
+        <nav>
+            <div class="nav-menu">
+                <a href="#tratamentos">Tratamentos</a>
+                <a href="#sobre">Sobre o Dr.</a>
+                <a href="#jornada">Jornada do Paciente</a>
+                <a href="#avaliacoes">Avaliações</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.259-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me" target="_blank" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <label for="menu-checkbox" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu Sorriso Merece o Melhor</h1>
+            <p>Tratamentos odontológicos de excelência</p>
+        </div>
+        <div class="scroll-indicator">⬇</div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="tagline-section">
+        <p>O Dr. Guilherme Sanchez une ciência e inovação para redefinir sua qualidade de vida.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Specialization Section -->
+        <section class="specialization">
+            <div class="spec-images">
+                <div class="spec-image large">
+                    <img src="https://cedt.com.br/wp-content/uploads/2023/02/Panoramica-1.png" alt="Radiografia Panorâmica">
+                </div>
+                <div class="spec-image">
+                    <img src="https://qualixradiologia.com.br/images/exames/extrabucais/teleradiografia1.jpg" alt="Teleradiografia">
+                </div>
+                <div class="spec-image">
+                    <img src="https://www.clinicaaggio.com.br/upload/service/U7YA0vhlTzjgMtDlJ1BoMknlERLVbDYO0rAm7I3n.jpeg" alt="Tratamento Odontológico">
+                </div>
+            </div>
+            <div class="spec-content">
+                <h3>ESPECIALIDADES</h3>
+                <h2>Recupere seu Sorriso</h2>
+                <p class="subtitle">com precisão e segurança.</p>
+                <p>Avaliação especializada em todos os aspectos da saúde bucal com planos personalizados de reabilitação. Terapias guiadas por exercícios e técnicas minimamente invasivas para restaurar função, conforto e qualidade de vida.</p>
+                <p>Cada movimento importa: aqui, ciência e inovação se encontram para tratar da saúde bucal com eficiência e respeito. Tudo começa por um diagnóstico preciso, a partir dele, unidos conduzidos baseados em evidências, com exercícios terapêuticos e, quando necessário, procedimentos avançados — sempre priorizando sua saúde bucal e qualidade de vida.</p>
+                <a href="agendar.html" class="cta-button" style="text-align: center;">Agendar uma Consulta</a>
+            </div>
+        </section>
+
+        <section class="about-doctor" id="sobre">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Dr. Guilherme Sanchez">
+            </div>
+            <div class="about-content">
+                <h3>SOBRE O DOUTOR</h3>
+                <h2>Dr. Guilherme Sanchez</h2>
+                <p class="subtitle">Ciência, Inovação e Cuidado</p>
+                <p>Com uma trajetória dedicada à reabilitação estética e funcional, o Dr. Guilherme Sanchez une o rigor científico às práticas mais modernas da odontologia. O propósito do seu trabalho é claro: oferecer um atendimento altamente personalizado que vá além da estética, devolvendo saúde, conforto e confiança.</p>
+                <p>Especialista em técnicas minimamente invasivas, ele acredita que cada sorriso conta uma história e deve ser tratado com precisão e respeito. Seus protocolos são guiados por evidências clínicas, utilizando tecnologia de ponta para planejar resultados previsíveis e duradouros.</p>
+                
+                <div class="about-credentials">
+                    <ul>
+                        <li>Especialista em Reabilitação Oral e Odontologia Estética</li>
+                        <li>Abordagem baseada em diagnósticos de alta precisão</li>
+                        <li>Foco no bem-estar e na melhoria contínua da qualidade de vida</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="patient-journey" id="jornada">
+            <div class="journey-header">
+                <h3>O CAMINHO PARA O SEU NOVO SORRISO</h3>
+                <h2>A Jornada do Paciente</h2>
+                <p class="subtitle">Uma experiência guiada pelo cuidado, ciência e previsibilidade</p>
+                <p class="journey-intro">Entendemos que buscar a reabilitação oral e estética é uma decisão importante que impacta diretamente na sua qualidade de vida. Por isso, desenhamos um protocolo de atendimento exclusivo, transparente e sem surpresas. Cada etapa foi meticulosamente pensada para garantir o seu conforto e os melhores resultados clínicos.</p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="journey-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Acolhimento e Escuta Ativa</h4>
+                        <p>Nossa relação começa antes mesmo de você sentar na cadeira. A primeira consulta é um momento dedicado a ouvir você. Queremos entender suas expectativas, suas queixas, seu histórico odontológico e o que você espera alcançar. O objetivo primário é construir uma relação de confiança mútua em um ambiente empático e livre de julgamentos.</p>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Diagnóstico Digital de Alta Precisão</h4>
+                        <p>A base de um tratamento de excelência é um diagnóstico impecável. Substituímos as antigas moldagens desconfortáveis por tecnologia de escaneamento intraoral 3D. Realizamos um rigoroso protocolo fotográfico e solicitamos exames de imagem avançados (como tomografias e radiografias digitais). Mapeamos não apenas os seus dentes, mas toda a sua arquitetura facial e funcional.</p>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Planejamento Estratégico e Previsibilidade</h4>
+                        <p>Com todos os seus dados digitalizados, o Dr. Guilherme Sanchez debruça-se sobre o seu caso clínico. Unindo ciência e inovação tecnológica, é elaborado um projeto detalhado. Nesta fase, muitas vezes criamos o "Mockup" (um test-drive do seu novo sorriso), permitindo que você visualize e aprove o resultado estético e funcional no próprio espelho antes de qualquer intervenção definitiva.</p>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4>Execução Clínica Minimamente Invasiva</h4>
+                        <p>Chegou a hora de transformar o planejamento em realidade. Com protocolos modernos, o foco absoluto é o seu conforto e a preservação da estrutura natural dos seus dentes. Utilizamos instrumentais de precisão e técnicas minimamente invasivas, garantindo procedimentos mais rápidos, silenciosos, com menor tempo de recuperação e quase nenhum desconforto pós-operatório.</p>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h4>Acompanhamento e Manutenção da Longevidade</h4>
+                        <p>Acreditamos que a odontologia de alto nível se prova com o passar dos anos. A entrega do seu sorriso não é o fim da nossa jornada, mas o início de uma nova fase de cuidados. Estabelecemos um programa de retornos preventivos e profilaxias personalizadas para proteger o investimento feito na sua saúde bucal, garantindo que o seu bem-estar e estética durem a vida toda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="treatments" id="tratamentos">
+            <h3>PRINCIPAIS TRATAMENTOS</h3>
+            <h2>Procedimentos que Transformam</h2>
+            <p class="subtitle">Seu Sorriso</p>
+            <p class="treatments-desc">Conheça os principais procedimentos oferecidos para restaurar e melhorar sua saúde bucal e estética dentária.</p>
+
+            <div class="treatment-gallery">
+                <div class="treatment-card" onclick="openModal('clareamento')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80" alt="Clareamento Dental">
+                    </div>
+                    <div class="card-label">Clareamento Dental</div>
+                </div>
+                <div class="treatment-card" onclick="openModal('implantes')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Implantes Dentários">
+                    </div>
+                    <div class="card-label">Implantes Dentários</div>
+                </div>
+                <div class="treatment-card" onclick="openModal('ortodontia')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&q=80" alt="Ortodontia">
+                    </div>
+                    <div class="card-label">Ortodontia</div>
+                </div>
+                <div class="treatment-card" onclick="openModal('facetas')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&q=80" alt="Facetas de Porcelana">
+                    </div>
+                    <div class="card-label">Facetas de Porcelana</div>
+                </div>
+                <div class="treatment-card" onclick="openModal('canal')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80" alt="Tratamento de Canal">
+                    </div>
+                    <div class="card-label">Tratamento de Canal</div>
+                </div>
+                <div class="treatment-card" onclick="openModal('protese')">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&q=80" alt="Próteses Dentárias">
+                    </div>
+                    <div class="card-label">Próteses Dentárias</div>
+                </div>
+            </div>
+
+            <!-- Modal Popup -->
+            <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+                <div class="modal-box" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal()">✕</button>
+                    <div class="modal-img-wrap">
+                        <img id="modalImg" src="" alt="">
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-tag">Procedimento</span>
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalDesc"></p>
+                        <ul id="modalBenefits"></ul>
+                        <a href="agendar.html" class="cta-button" style="text-align: center;">Agendar uma Consulta</a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const procedures = {
+                    clareamento: {
+                        title: 'Clareamento Dental',
+                        img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80',
+                        desc: 'O clareamento dental é um dos procedimentos estéticos mais populares da odontologia moderna. Utiliza agentes clareadores à base de peróxido de hidrogênio ou peróxido de carbamida para remover manchas e descolorações dos dentes, devolvendo um sorriso mais branco e luminoso.',
+                        benefits: ['Resultado visível em uma única sessão', 'Procedimento seguro e minimamente invasivo', 'Clareamento a laser ou com moldeiras personalizadas', 'Dentes até 8 tons mais claros']
+                    },
+                    implantes: {
+                        title: 'Implantes Dentários',
+                        img: 'https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        desc: 'Os implantes dentários são a solução mais avançada para substituição de dentes perdidos. Consistem em uma raiz de titânio inserida no osso da mandíbula, que serve de base para uma coroa protética de alta estética. O resultado é indistinguível de um dente natural.',
+                        benefits: ['Durabilidade de décadas com cuidados adequados', 'Sensação e função idênticas ao dente natural', 'Preserva o osso alveolar', 'Não afeta os dentes adjacentes']
+                    },
+                    ortodontia: {
+                        title: 'Ortodontia',
+                        img: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80',
+                        desc: 'A ortodontia corrige o posicionamento dos dentes e da mordida através de aparelhos fixos ou removíveis (alinhadores). Além da estética, o tratamento ortodôntico melhora a função mastigatória, a saúde periodontal e pode prevenir problemas articulares.',
+                        benefits: ['Aparelhos metálicos, cerâmicos ou alinhadores invisíveis', 'Tratamento para todas as idades', 'Melhora a saúde bucal e a autoestima', 'Planejamento digital com previsão do resultado final']
+                    },
+                    facetas: {
+                        title: 'Facetas de Porcelana',
+                        img: 'https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80',
+                        desc: 'As facetas de porcelana são lâminas ultrafinas fixadas à superfície frontal dos dentes para corrigir cor, forma, tamanho e posicionamento. São a escolha preferida para transformações completas do sorriso com resultados altamente naturais e duradouros.',
+                        benefits: ['Espessura mínima — preserva estrutura dental', 'Alta resistência e durabilidade', 'Cor e translucidez idênticas ao esmalte natural', 'Resistentes a manchas e descoloração']
+                    },
+                    canal: {
+                        title: 'Tratamento de Canal',
+                        img: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80',
+                        desc: 'O tratamento de canal (endodontia) remove a polpa dentária infectada ou danificada, preservando o dente natural. Com anestesia moderna e técnicas avançadas, o procedimento é praticamente indolor e evita a extração do dente.',
+                        benefits: ['Elimina a dor e a infecção', 'Salva o dente natural', 'Procedimento moderno e praticamente indolor', 'Alta taxa de sucesso a longo prazo']
+                    },
+                    protese: {
+                        title: 'Próteses Dentárias',
+                        img: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80',
+                        desc: 'As próteses dentárias reabilitam pacientes com perda parcial ou total dos dentes, restaurando a função mastigatória, a fala e a estética do sorriso. Disponíveis em diferentes modalidades — fixas, removíveis ou sobre implantes — adaptadas a cada necessidade.',
+                        benefits: ['Prótese fixa, removível ou sobre implantes', 'Materiais de alta resistência e estética', 'Reabilitação completa da função oral', 'Personalizada para cada paciente']
+                    }
+                };
+
+                function openModal(id) {
+                    const p = procedures[id];
+                    document.getElementById('modalTitle').textContent = p.title;
+                    document.getElementById('modalDesc').textContent = p.desc;
+                    document.getElementById('modalImg').src = p.img;
+                    document.getElementById('modalImg').alt = p.title;
+                    const ul = document.getElementById('modalBenefits');
+                    ul.innerHTML = p.benefits.map(b => `<li>${b}</li>`).join('');
+                    document.getElementById('modalOverlay').classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeModal() {
+                    document.getElementById('modalOverlay').classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+
+                document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+            </script>
+        </section>
+    </div>
+
+<section class="reviews" id="avaliacoes">
+            <div class="reviews-header">
+                <h3>DEPOIMENTOS</h3>
+                <h2>O Que Dizem Nossos Pacientes</h2>
+                <p class="subtitle">Experiências reais de quem transformou o sorriso conosco</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Profissional excelente! O Dr. Guilherme me passou muita segurança desde a primeira consulta. O ambiente é acolhedor e a tecnologia utilizada no meu planejamento foi impressionante. Resultado perfeito, superou minhas expectativas!"</p>
+                    <div class="review-author">
+                        <span class="author-name">Mariana Silva</span>
+                        <span class="author-treatment">Implantes Dentários</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Fiz minhas facetas de porcelana e não poderia estar mais feliz. A atenção aos detalhes e o cuidado para deixar com um aspecto natural foram os grandes diferenciais. Minha autoestima mudou completamente após o tratamento."</p>
+                    <div class="review-author">
+                        <span class="author-name">Ricardo Mendes</span>
+                        <span class="author-treatment">Facetas de Porcelana</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Sempre tive pavor de dentista, mas a jornada do paciente que eles oferecem é real. Nenhum desconforto, tudo muito transparente e o resultado final do meu clareamento ficou incrível. Recomendo de olhos fechados."</p>
+                    <div class="review-author">
+                        <span class="author-name">Camila Oliveira</span>
+                        <span class="author-treatment">Clareamento Dental</span>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="img/Untitled.png" alt="GS Logo" class="logo-img">
+                    <div class="logo-text">
+                        <div class="logo-name-group">
+                            <span class="logo-dr">Dr.</span>
+                            <span class="logo-name-line">
+                                <span class="logo-first">Guilherme</span>
+                                <span class="logo-last">Sanchez</span>
+                            </span>
+                        </div>
+                        <div class="logo-divider"></div>
+                        <span class="logo-subtitle">Clínica de Odontologia</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Odontologia de excelência unindo ciência, inovação e cuidado humanizado para transformar o seu sorriso e a sua qualidade de vida.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#tratamentos">Tratamentos</a></li>
+                    <li><a href="#sobre">Sobre o Dr.</a></li>
+                    <li><a href="#jornada">Jornada do Paciente</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <ul>
+                    <li><strong>Endereço:</strong> Av. Paulista, 1000 - Bela Vista, São Paulo - SP</li>
+                    <li><strong>WhatsApp:</strong> (11) 90000-0000</li>
+                    <li><strong>Email:</strong> contato@drguilhermesanchez.com.br</li>
+                    <li><strong>Atendimento:</strong> Seg - Sex: 08h às 18h</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr. Guilherme Sanchez. Todos os direitos reservados. | Responsável Técnico: CRO-SP 12345</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.259-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/></svg>
+                </a>
+                <a href="https://wa.me" target="_blank" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
+                </a>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
